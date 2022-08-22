@@ -1,0 +1,129 @@
+:root{
+    background: url("alexander-jawfox-Kl2t5U6Gkm0-unsplash.jpg")no-repeat center/cover;
+    background-position: initial; 
+    color: wheat;
+}
+.grad-bar {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
+    background-size: 400% 400%;  
+    -webkit-animation: gradbar 10s ease infinite; 
+    -moz-animation: gradbar 10s ease infinite; 
+     animation: gradbar 10s ease infinite;  
+  }
+  @-webkit-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.left{
+    display: flex;
+}
+.left img{
+    background-color: cornsilk;
+    width: 3%;
+    left: 100px;
+    position: absolute;
+    padding: 1px 4px;
+    margin: 5px 0px;
+}
+header{
+    color: white;
+    margin: 14px 607px;
+    font-size: 30px;
+    position: absolute;
+}
+.container{
+    color: rgb(204, 142, 28);   
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(226, 29, 78, 0.589);
+    overflow: hidden;
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+.membership{
+   border: 5px solid whitesmoke;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   margin: 98px 243px;
+   padding: 15px 20px;
+   text-align: center;
+   font-size: 25px;
+   border-radius: 81px;
+}
+.memship input{
+  
+    display: inline-block;
+    width: 348px;
+    height: 38px;
+    font-size: 25px;
+    padding: 5px ;
+    position: relative;
+    text-align: center;
+}
+.memship .radio{
+    width: 284px;
+    height: 55px;
+    position: relative;
+    display: inline-table;
+}
+ .btn{
+   background-color: red;
+   margin: 15px 5px;
+ }
+ footer{
+     font-size: large;
+ }
+

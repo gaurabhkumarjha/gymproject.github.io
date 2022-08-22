@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" href="projectgym.css">
+    <link rel="stylesheet" href="mediaquerygymproj.css">
+
+</head>
+
+<body>
+    <div class="grad-bar"></div>
+    <div class="topnav">
+        <div class="left">
+            <header>@UNISEX_GYM..</header>
+            <img src="pngegg.png" alt="Webpage error">
+        </div>
+        <ul>
+            <a href="explore.html">INTRO</a>
+            <a href="gymgallery.html">GYM GALLERY</a>
+            <a href="nutrition.html">NUTRITION PROUDCTS</a>
+            <a href="contactus.html">CONTACT US</a>
+        </ul>
+    </div>
+
+    <div class="membership">
+        <h2>MEMBERSHIP APPLICATION</h2>
+        <div class="memship">
+            <form action="noaction.nodejs">
+
+                <div>
+                    <input type="text" id="username" name="tename" placeholder="Enter Your Name">
+                </div>
+
+                <div>
+                    <input type="text" id="userage" name="teage" placeholder="Enter Your Age">
+                </div>
+
+                <div class="radio">
+                    Male<input type="radio" id="usergender" name="gender">Female<input type="radio"
+                        name="gender">Other<input type="radio" name="gender">
+                </div>
+
+                <div>
+                    <input type="email" id="useremail" name="email" placeholder="Enter Your Email">
+                </div>
+
+                <div>
+                    <input type="text" id="usernumber" name="phnumber" placeholder="Enter Your Phone Number">
+                </div>
+                <div>
+                    <p id="convert"></p>
+                </div>
+                <div>
+                    <input class="btn" id="submitbutton" type="button" value="Submit" onclick="sbutton()">
+                    <input class="btn" id="resetbutton" type="button" value="Reset" onclick="rbutton()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>@UNISEX_GYM.. Copyright 2022 - 2025</footer>
+    </div>
+    
+    <script>
+        function sbutton() {
+            let name = document.getElementById('username').value;
+            let age = document.getElementById('userage').value;
+            let gender = document.getElementById('usergender').value;
+            let email = document.getElementById('useremail').value;
+            let number = document.getElementById('usernumber').value;
+
+            let arr = [];
+            arr.push(name);
+            arr.push(age);
+            arr.push(gender);
+            arr.push(email);
+            arr.push(number);
+
+            if (name == '' && age == '' && number == '' && email == '') {
+                alert("please fill your all sections");
+            }
+            else if (name == '') {
+                alert("please fill your name section");
+            }
+            else if (number == '' || number.length != 10) {
+                alert("please fill your phone number section");
+            }
+            else if (email == '') {
+                alert("please fill email section");
+            }
+            else if (age == '' || age >='a' && age <='z' || age != 18) {
+                alert("please fill your age section,[must age entrie are numerical and atleast age 18]");
+            }
+            else {
+                let x = arr[4];
+                localStorage.setItem(x, JSON.stringify(arr));
+                alert("your mebership form are succesfully submited");
+                document.getElementById('username').value = '';
+                document.getElementById('userage').value = '';
+                document.getElementById('usergender').value = '';
+                document.getElementById('useremail').value = '';
+                document.getElementById('usernumber').value = '';
+            }
+
+        }
+
+        function rbutton() {
+
+            let name = document.getElementById('username').value;
+            let age = document.getElementById('userage').value;
+            let gender = document.getElementById('usergender').value;
+            let email = document.getElementById('useremail').value;
+            let number = document.getElementById('usernumber').value;
+
+            if (name == '' && age == '' && email == '' && number == '') {
+                alert("fill your entries first");
+            }
+
+
+            else {
+                let x = prompt("Are You Sure Want To Remove All Fields (Type YES)");
+
+                if (x == "yes") {
+                    document.getElementById('username').value = '';
+                    document.getElementById('userage').value = '';
+                    document.getElementById('usergender').value = '';
+                    document.getElementById('useremail').value = '';
+                    document.getElementById('usernumber').value = '';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
