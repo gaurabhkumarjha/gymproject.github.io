@@ -1,7 +1,5 @@
 @media (min-width: 50px) and (max-width: 256px) { 
-    :root {
-       border: 5px solid brown;
-    }
+    
 
     .grad-bar {
         width: 100%;
@@ -69,9 +67,7 @@
 }
 
 @media (min-width: 256px) and (max-width: 506px) { 
-    :root {
-        border: 5px solid blue;
-    }
+    
 
     .grad-bar {
         width: 100%;
@@ -139,9 +135,7 @@
 }
 
 @media (min-width: 506px) and (max-width: 692px) {  
-    :root {
-        border: 5px solid violet;
-    }
+    
 
     .grad-bar {
         width: 100%;
@@ -208,9 +202,7 @@
 }
 
 @media (min-width: 692px) and (max-width: 830px) { 
-    :root {
-        border: 5px solid red;
-    }
+    
 
     .grad-bar {
         width: 100%;
@@ -277,9 +269,7 @@
 }
 
 @media (min-width: 830px) and (max-width: 953px) {
-    :root {
-        border: 5px solid chartreuse;
-    }
+   
 
     .grad-bar {
         width: 100%;
@@ -347,9 +337,7 @@
 }
 
 @media (min-width: 953px) and (max-width: 1510px) {
-    :root {
-        border: 5px solid palevioletred;
-    }
+   
 
     .grad-bar {
         width: 100%;
